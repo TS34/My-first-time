@@ -1,0 +1,24 @@
+<div class = "container" ng-controller="Home as main">
+    <div class = "jumbotron">
+        <i class="fa fa-calculator"></i>  A Simple Calculator
+    </div >
+    
+    <div>
+        <span>{{main.message}}</span>
+    </div>
+    
+    <div>
+        <input type="number" ng-model="main.firstNumber"/>
+
+        <input type="number" ng-model="main.secondNumber"/>
+        
+        
+        
+        <button type="button" class="btn btn-primary" ng-click="main.addNumbers()">Add</button>
+    </div>
+    
+    <div class="alert">
+        {{main.result}}
+    </div>
+    <button type="button" class="btn btn-danger" ng-click="main.clearAll()">Clear</button>
+</div>
